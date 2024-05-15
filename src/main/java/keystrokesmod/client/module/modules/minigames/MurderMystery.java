@@ -90,14 +90,14 @@ public class MurderMystery extends Module {
                   }
                }
 
-               int rgb = Color.cyan.getRGB();
+               
                if (mur.contains(entity)) {
                   rgb = Color.red.getRGB();
                } else if (det.contains(entity)) {
                   rgb = Color.green.getRGB();
                }
 
-               Utils.HUD.drawBoxAroundEntity(entity, 2, 0.0D, 0.0D, rgb, false);
+               Utils.HUD.drawBoxAroundEntity(entity, 1, 0.0D, 0.0D, rgb, false);
             }
          }
       }
