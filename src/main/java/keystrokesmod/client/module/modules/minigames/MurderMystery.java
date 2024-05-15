@@ -60,11 +60,11 @@ public class MurderMystery extends Module {
                String c4 = "&7[&cALERT&7]";
                if (entity.getHeldItem() != null && entity.getHeldItem().hasDisplayName()) {
                   Item i = entity.getHeldItem().getItem();
-                  if (i instanceof ItemSword || i instanceof ItemAxe || entity.getHeldItem().getDisplayName().contains("Knife")) {
+                  if (i instanceof ItemSword || i instanceof ItemAxe || i instanceof ItemGoldenCarrot || i instanceof ItemSponge || i instanceof ItemShovel || i instanceof ItemPickaxe || i instanceof ItemBlazeRod || i instanceof ItemSalmon || i instanceof ItemHoe || i instanceof ItemStick || i instanceof ItemDeadBush || i instanceof ItemCarrotOnAStick || i instanceof ItemNameTag || i instanceof ItemApple || i instanceof ItemPumpkinPie || i instanceof ItemShears || i instanceof ItemMusicDisc || i instanceof ItemBoat || i instanceof ItemCookie || i instanceof ItemBook || i instanceof ItemFeather || i instanceof ItemBone || i instanceof entity.getHeldItem().getDisplayName().contains("Knife")) {
 
                      if (!mur.contains(entity)) {
                         mur.add(entity);
-                        String c6 = "is a murderer!";
+                        String c6 = "is a moiderer!";
                         if (alertMurderers.isToggled()) {
                            String c5 = "note.pling";
                            mc.thePlayer.playSound(c5, 1.0F, 1.0F);
@@ -78,7 +78,7 @@ public class MurderMystery extends Module {
                      }
                   } else if (i instanceof ItemBow && searchDetectives.isToggled() && !det.contains(entity)) {
                      det.add(entity);
-                     String c7 = "has a bow!";
+                     String c7 = "has a big gun";
                      if (alertMurderers.isToggled()) {
                         Utils.Player.sendMessageToSelf(c4 + " &e" + entity.getName() + " &3" + c7);
                      }
