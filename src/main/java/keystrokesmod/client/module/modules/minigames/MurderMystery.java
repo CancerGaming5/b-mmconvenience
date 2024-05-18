@@ -94,7 +94,7 @@ public class MurderMystery extends Module {
                if (mur.contains(entity)) {
                   rgb = Color.red.getRGB();
                } else if (det.contains(entity)) {
-                  rgb = Color.green.getRGB();
+                  rgb = Color.cyan.getRGB();
                }
 
                Utils.HUD.drawBoxAroundEntity(entity, 1, 0.0D, 0.0D, rgb, false);
